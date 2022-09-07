@@ -33,6 +33,7 @@ def print_menu():
     print('1) List reminders')
     print('2) Add a reminder')
     print('3) Exit')
+    print('drink water')
 
 def main():
     print_menu()
