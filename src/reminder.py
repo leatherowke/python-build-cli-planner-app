@@ -1,3 +1,7 @@
+#from sys import prefix
+#from typing_extensions import Self
+
+
 from sys import prefix
 from typing_extensions import Self
 
@@ -10,6 +14,13 @@ class PrefixedReminder:
         self.prefix = prefix
         self.text = prefix + '<placeholder_text>'
 
-class PoliteReminder:
+class PoliteReminder(PrefixedReminder):
     def __init__(text):
-        super().__init__(prefix = 'Please')
+        text = prefix + text
+        super().__init__(prefix="please")
+        
+        
+    
+        
+
+
